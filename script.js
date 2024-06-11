@@ -1,34 +1,3 @@
-document.getElementById("floating-icon").addEventListener("click", function () {
-  document.getElementById("chat-box").classList.toggle("hidden");
-});
-
-document.getElementById("close-chat").addEventListener("click", function () {
-  document.getElementById("chat-box").classList.add("hidden");
-});
-
-// Función para cambiar al modo oscuro
-function toggleDarkMode() {
-  const body = document.body;
-  body.classList.toggle("dark-mode");
-
-  // Guardar el estado en el almacenamiento local
-  const isDarkModeEnabled = body.classList.contains("dark-mode");
-  localStorage.setItem("dark-mode", isDarkModeEnabled);
-}
-
-// Escuchar el clic en el botón
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("toggle-dark-mode");
-
-  // Establecer el estado inicial según el almacenamiento local
-  const isDarkModeEnabled = localStorage.getItem("dark-mode") === "true";
-  if (isDarkModeEnabled) {
-    document.body.classList.add("dark-mode");
-  }
-
-  toggleButton.addEventListener("click", toggleDarkMode);
-});
-
 /* Validacion de formulario */
 $(document).ready(function () {
   $("#myForm").submit(function (e) {
@@ -60,3 +29,20 @@ $(document).ready(function () {
     }
   });
 });
+
+/* Activar modo oscuro */
+document
+  .getElementById("darkModeToggle")
+  .addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+    var darkModeButton = document.getElementById("darkModeToggle");
+    if (document.body.classList.contains("dark-mode")) {
+      darkModeButton.innerText = "Modo Claro ☀️";
+      darkModeButton.classList.remove("btn-dark");
+      darkModeButton.classList.add("btn-light");
+    } else {
+      darkModeButton.innerText = "Modo Oscuro 🌙";
+      darkModeButton.classList.remove("btn-light");
+      darkModeButton.classList.add("btn-dark");
+    }
+  });
