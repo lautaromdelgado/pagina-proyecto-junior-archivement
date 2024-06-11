@@ -1,0 +1,140 @@
+/* Importar de "GOOGLE FONT" */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Le da un espacio de margen entre los DIVS */
+.contenedor-espacios {
+  margin: 15vh 0vh;
+}
+
+/* Resaltar de un color un titulo */
+.programar-mision {
+  color: skyblue;
+}
+
+/* Resaltar de un color diferente al resto, una sección de una palabra */
+.AR {
+  color: rgb(194, 194, 50);
+}
+
+/* Dar tamaño a la imagen de la programadora */
+#foto-programadora {
+  width: 38vh;
+  border-radius: 10px;
+}
+
+/* Dar mayor tamaño a los titulos */
+.titulo {
+  font-size: 45px;
+}
+
+/* Agrandar el texto del titulo MISION PROGRAMAR */
+#Mision-programar {
+  font-size: 36px;
+}
+
+/* agrandar fuente de texto del enfoque */
+#nuestro-enfoque {
+  font-size: 24px;
+}
+
+/* Editar los subtitulos de los enfoques */
+.enfoques {
+  font-size: 20px;
+  color: burlywood;
+  text-decoration: underline;
+}
+
+/* BOTON FLOTANTE */
+
+#floating-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+#floating-icon:hover {
+  transform: scale(1.1);
+}
+
+#chat-box {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+#chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#chat-content {
+  padding: 10px;
+}
+
+#close-chat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Config para el modo oscuro de la web */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #343a40 !important;
+}
+
+body.dark-mode .navbar .nav-link {
+  color: #ffffff !important;
+}
+
+body.dark-mode .navbar .nav-link:hover {
+  color: #c0c0c0 !important;
+}
+
+body.dark-mode .btn {
+  background-color: #1f1f1f;
+  border-color: #3a3a3a;
+  color: #ffffff;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #3a3a3a;
+  border-color: #5a5a5a;
+}
